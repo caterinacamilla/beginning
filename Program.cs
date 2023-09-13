@@ -68,19 +68,19 @@ namespace HelloWorld
 
         Console.WriteLine(myList[1]);
 
-        /*
+        
 
-                myNum = 9;
+               int myNum = 9;
 
-                myDoubleNum = 8.99;
+                double myDoubleNum = 8.99;
 
-                myLetter = 'A';
+                char  myLetter = 'A';
 
-                myBoolean = false;
+                bool myBoolean = false;
 
-                myText = "Hello World";
+                string myText = "Hello World";
 
-            */
+            
             
         }
         
