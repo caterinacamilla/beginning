@@ -1,19 +1,29 @@
-﻿using System.Net.Mail;
-using System.Runtime.CompilerServices;
+﻿using System.ComponentModel;
 
-namespace 
+using System.Numerics;
 
-    class Programm
-    // Frage den Nutzer bis zu welcher Zahl aufsummiert werden soll
-    // Mache das in allen möglichen Schleifenarten
-    // In welcher geht es nicht und wieso ? (For, foreach,while,do while)
-    //6
-    //1+2+3+4+5+6 => 21 
+using System.Security.Cryptography;
+
+using System.Security.Cryptography.X509Certificates;
+namespace HelloWorld
 {
+    class Program
     {
-        {
-            {Console.WriteLine("Bis zu welcher Zahl soll aufsummiert werden?");}
-        }
-    }
+        static void Main(string[] args)
 
+        {
+
+            Console.WriteLine("Bis zu welcher Zahl soll aufsummiert werden? (0,1,2,...,x)");
+
+            int untilNumber = Convert.ToInt16(Console.ReadLine());
+            int ergebnis = 0;
+            for(int i = 0; i <=untilNumber;i++)
+            {
+                    ergebnis+= i;
+
+                    Console.WriteLine($"Added number {i}, current result {ergebnis}");
+            }
+        }
+
+}
 }
