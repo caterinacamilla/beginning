@@ -79,9 +79,17 @@ namespace HelloWorld
                 bool myBoolean = false;
 
                 string myText = "Hello World";
+                int ergebnis2 = zahl;
+                string example_text = "    This is a test12125415@   ";
 
-            
-            
+            Console.WriteLine(example_text);
+            Console.WriteLine(example_text.Contains("@"));
+            if(name.length>5)
+            {
+            Console.WriteLine ("Oh der ist aber lang");}
+            else
+            {Console.WriteLine("Der ist ja kurz")};
+
         }
         
 
