@@ -1,74 +1,19 @@
 ﻿using System.Net.Mail;
 using System.Runtime.CompilerServices;
 
-namespace HelloWorld
+namespace 
 
-    class Program
+    class Programm
+    // Frage den Nutzer bis zu welcher Zahl aufsummiert werden soll
+    // Mache das in allen möglichen Schleifenarten
+    // In welcher geht es nicht und wieso ? (For, foreach,while,do while)
+    //6
+    //1+2+3+4+5+6 => 21 
+{
     {
-            static void Main(string[] args){
-        string text = "Das ist ein Text";
-        Console.WriteLine(text);
-        int zahl = 21;
-        Console.WriteLine(zahl);
-        double kommazahl = 21.3;
-        Console.WriteLine(kommazahl);
-        float weiterflieskomma = 21.354763F;
-        Console.WriteLine(weiterflieskomma);
-        decimal flieskomma = 21.5M;
-        Console.WriteLine(flieskomma);
-        bool wahrheitswert = true;
-        Console.WriteLine(wahrheitswert);
-        bool anders = false;
-        Console.WriteLine(anders);
-        char buchstabe = (char)48;
-        Console.WriteLine(buchstabe);
-        long langzahl = 123456789123456789;
-        Console.WriteLine(langzahl);
-        uint positiveZahldoppeltsolang = 123;
-        Console.WriteLine(positiveZahldoppeltsolang);
-        string[] myArray = new string[10];
-        myArray[0] = "erster Wert";
-        myArray[9] = "letzter Wert";
-        List<string> myList = new List<string>();
-        myList.Add("Luca");
-        myList.Add("Katharina");    
-        Console.WriteLine(myList[0]);
-        Console.WriteLine(myList[1]);
-               int myNum = 9;
-                double myDoubleNum = 8.99;
-                char  myLetter = 'A';
-                bool myBoolean = false;
-                string myText = "Hello World";
-                int ergebnis2 = zahl;
-                string example_text = "    This is a test12125415@   ";
-            Console.WriteLine(example_text);
-            Console.WriteLine(example_text.Contains("@"));
-            if(name.length>5)
-            {
-            Console.WriteLine ("Oh der ist aber lang");}
-            else
-            {Console.WriteLine("Der ist ja kurz")};
-static void Main(string[] args)
         {
-            List<int> myNumberList = new List<int>();
-            int user_zahl = 0;
-            do
-            {
-                //codeblock
-                Console.WriteLine("Gebe mir eine Zahl");
-                user_zahl = Convert.ToInt32(Console.ReadLine());
-                myNumberList.Add(user_zahl);
-            } while(user_zahl > 0);
-            //Summiere alle Zahlen auf
-            int ergebnis = 0;
-            foreach(int zahl in myNumberList)
-            {
-                ergebnis += zahl;
-            }
-        Console.WriteLine($"Das Eegebnis ist {ergebnis}");
-        }  
-    }
+            {Console.WriteLine("Bis zu welcher Zahl soll aufsummiert werden?");}
         }
     }
 
-        
+}
