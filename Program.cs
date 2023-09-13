@@ -5,18 +5,7 @@ namespace HelloWorld
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            
-            Console.WriteLine("Gebe mir deinen Namen!");
-            string name = Console.ReadLine();
-
-            Console.WriteLine("Sage mir wie alt du bist!");
-            int age = Convert.ToInt16(Console.ReadLine());
-            int alterin10 = age + 10;
-
-            Console.WriteLine($"hello,   {name}!   Dein Alter ist {age} in 10 Jahren bin ich {alterin10}" ); 
-            Console.WriteLine (Gebe mir eine Zahl);
+    
             static void Main(string[] args){
 
         string text = "Das ist ein Text";
@@ -79,12 +68,23 @@ namespace HelloWorld
 
         Console.WriteLine(myList[1]);
 
-has context menu
-Compose
+        /*
+
+                myNum = 9;
+
+                myDoubleNum = 8.99;
+
+                myLetter = 'A';
+
+                myBoolean = false;
+
+                myText = "Hello World";
+
+            */
             
         }
-        // Frage den Nutzer nach der ersten Zahl
+        
+
     }
-}  // Frage den Nutzer nach der ersten 
-// Gebe das Ergebnis auf der Console aus 
-// "Das Ergebnis aus {(Zahl1)} - {(Zahl2)} = {(Ergebnis)}
+
+        } 
