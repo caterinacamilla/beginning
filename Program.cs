@@ -9,12 +9,16 @@ namespace HelloWorld
 {
     class Program
     { static void Main(string[] args)
-        {  Console.WriteLine("Bis zu welcher Zahl soll aufsummiert werden? (0,1,2,...,x)");
-            int untilNumber = Convert.ToInt16(Console.ReadLine());
-            int ergebnis = 0;
-            for(int i = 0; i <=untilNumber;i++)
-            {   ergebnis+= i;
-                    Console.WriteLine($"Added number {i}, current result {ergebnis}");}
-        }
+        { int Ergebnis = 1+1;
+        Console.WriteLine(Ergebnis);
+        Console.WriteLine("Höchstgrenze:");
+int Max = Convert.ToInt32(Console.ReadLine());
+long Fakultaet = 1; //Vorbelegung mit 1 ist wichtig!!!
+for (long i = 1; i <= Max; i++)
+{
+Fakultaet *= i;
+}
+Console.WriteLine("{0}! = {1}", Max, Fakultaet);
+}
 }
 }
