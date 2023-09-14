@@ -20,5 +20,4 @@ Fakultaet *= i;
 }
 Console.WriteLine("{0}! = {1}", Max, Fakultaet);
 }
-}
-}
+}}
