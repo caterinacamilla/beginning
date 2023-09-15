@@ -11,28 +11,13 @@ namespace HelloWorld
     { 
         static void Main(string[] args)
         {
-            Console.WriteLine ("mi dà un numero a caso tra 0 e 101");
-            int nonloso = Convert.ToInt16 (Console.ReadLine ());
-            Random random = new Random ();
-            int numberToGuess = random.Next (0,101);
-            while (numberToGuess != nonloso){ 
-                //zahl wurde nicht getroffen             
-                Console.WriteLine("peccato,hai perso");
+            Console.WriteLine("Gib mir 2 Zahlen");
 
-                if(nonloso < numberToGuess)
-                {
-                    Console.WriteLine("il numero che stai cercando e più grande");
-                }
-                else
-                {
-                    Console.WriteLine("il numero che stai cercando e più piccolo");
-                }
-                nonloso = Convert.ToInt16 (Console.ReadLine ());
-            }
-                
-            
+           int zahl1 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine ("congratulazione,hai vinto");
+           int zahl2 = Convert.ToInt32(Console.ReadLine());
+
+           Console.WriteLine(zahl1%zahl2);
         }
 
         
