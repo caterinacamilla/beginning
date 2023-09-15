@@ -11,67 +11,31 @@ namespace HelloWorld
     { 
         static void Main(string[] args)
         {
-            
-            string operators = "";
-            do{
-                Console.WriteLine ("Gebe mir ein Rechenzeichen (+, -, *, /)");
-            }while (operators != "+" && operators != "-" && operators != "*" && operators != "/"  );
+            Console.WriteLine ("mi dà un numero a caso tra 0 e 101");
+            int nonloso = Convert.ToInt16 (Console.ReadLine ());
+            Random random = new Random ();
+            int numberToGuess = random.Next (0,101);
+            while (numberToGuess != nonloso){ 
+                //zahl wurde nicht getroffen             
+                Console.WriteLine("Du hast verloren");
 
-            string zahl1 = "16";
+                if(nonloso < numberToGuess)
+                {
+                    Console.WriteLine("Die gesuchte Zahl ist größer");
 
-            string zahl2 = "32";
-            switch(operators)
-            {
-                case "+":
-                    Addition(zahl1,zahl2);
-                    break;
-                case "-":
-                    substraction(zahl1,zahl2);
-                    break;
-                case "*":
-                    multiplication(zahl1,zahl2);
-                    break;
-                case "/":
-                    division(zahl1, zahl2);
-                    break;
-                default:
-                    Console.WriteLine ("unknown Operator"); 
-                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Die gesuchte Zahl ist kleiner");
+                }
+                nonloso = Convert.ToInt16 (Console.ReadLine ());
             }
+                
+            
+
+            Console.WriteLine ("hai vinto");
         }
 
-        static int AdditionwithReturn (string zahl1, string zahl2)
-        {
-            int numero1 = Convert.ToInt32 (zahl1);
-            int numero2 = Convert.ToInt32 (zahl2);
         
-            return numero1 + numero2;
-        }
-        static void Addition (string zahl1, string zahl2)
-        
-        { 
-            int numero1 = Convert.ToInt32 (zahl1);
-            int numero2 = Convert.ToInt32 (zahl2);
-            Console.WriteLine (numero1 + numero2);
-           
-        }
-        static void substraction (string zahl1, string zahl2)
-        {
-            int numero1 = Convert.ToInt32 (zahl1);
-            int numero2 = Convert.ToInt32 (zahl2);
-            Console.WriteLine (numero1 - numero2);
-        }
-        static void multiplication (string zahl1, string zahl2)
-        { 
-            int numero1 = Convert.ToInt32 (zahl1);
-            int numero2 = Convert.ToInt32 (zahl2);
-            Console.WriteLine (numero1* numero2);
-        }
-        static void division (string zahl1, string zahl2)
-        {
-            int numero1 = Convert.ToInt32 (zahl1);
-            int numero2 = Convert.ToInt32 (zahl2);
-            Console.WriteLine (numero1 / numero2);
-        }
     }
 }
