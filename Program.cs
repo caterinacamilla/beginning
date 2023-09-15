@@ -17,13 +17,13 @@ namespace HelloWorld
                 Console.WriteLine ("Gebe mir ein Rechenzeichen (+, -, *, /)");
             }while (operators != "+" && operators != "-" && operators != "*" && operators != "/"  );
 
-            int zahl1 = 16;
+            string zahl1 = "16";
 
-            int zahl2 = 32;
+            string zahl2 = "32";
             switch(operators)
             {
                 case "+":
-                    addition(zahl1,zahl2);
+                    Addition(zahl1,zahl2);
                     break;
                 case "-":
                     substraction(zahl1,zahl2);
@@ -32,25 +32,46 @@ namespace HelloWorld
                     multiplication(zahl1,zahl2);
                     break;
                 case "/":
-                    division(zahl1,zahl2);
+                    division(zahl1, zahl2);
                     break;
                 default:
                     Console.WriteLine ("unknown Operator"); 
                     break;
             }
         }
-        static void addition (int zahl1, int zahl2)
+
+        static int AdditionwithReturn (string zahl1, string zahl2)
+        {
+            int numero1 = Convert.ToInt32 (zahl1);
+            int numero2 = Convert.ToInt32 (zahl2);
+        
+            return numero1 + numero2;
+        }
+        static void Addition (string zahl1, string zahl2)
+        
         { 
-            Console.WriteLine (zahl1 + zahl2);
+            int numero1 = Convert.ToInt32 (zahl1);
+            int numero2 = Convert.ToInt32 (zahl2);
+            Console.WriteLine (numero1 + numero2);
+           
         }
-        static void substraction (int zahl1, int zahl2)
-        { Console.WriteLine (zahl1 - zahl2);
+        static void substraction (string zahl1, string zahl2)
+        {
+            int numero1 = Convert.ToInt32 (zahl1);
+            int numero2 = Convert.ToInt32 (zahl2);
+            Console.WriteLine (numero1 - numero2);
         }
-        static void multiplication (int zahl1, int zahl2)
-        { Console.WriteLine (zahl1 * zahl2);
+        static void multiplication (string zahl1, string zahl2)
+        { 
+            int numero1 = Convert.ToInt32 (zahl1);
+            int numero2 = Convert.ToInt32 (zahl2);
+            Console.WriteLine (numero1* numero2);
         }
-        static void division (int zahl1, int zahl2)
-        {Console.WriteLine (zahl1 / zahl2);
+        static void division (string zahl1, string zahl2)
+        {
+            int numero1 = Convert.ToInt32 (zahl1);
+            int numero2 = Convert.ToInt32 (zahl2);
+            Console.WriteLine (numero1 / numero2);
         }
     }
 }
