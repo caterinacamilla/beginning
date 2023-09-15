@@ -10,20 +10,47 @@ namespace HelloWorld
     class Program
     { 
         static void Main(string[] args)
-        { 
-         List<string> names = new List<string> {"Luca", "Katharina", "Hans", "Linh", "Marcia", "Benny", "Niklas", "Lea"};
-            Console.WriteLine("Welchen Buchstaben möchtest du assortieren?");
-            string letter = Console.ReadLine();
-            foreach(string name in names)
+        {
+            
+            string operators = "";
+            do{
+                Console.WriteLine ("Gebe mir ein Rechenzeichen (+, -, *, /)");
+            }while (operators != "+" && operators != "-" && operators != "*" && operators != "/"  );
+
+            int zahl1 = 16;
+
+            int zahl2 = 32;
+            switch(operators)
             {
-                if(name.Contains(letter))
-                {
-                    Console.WriteLine(name);
-
-                }
-
+                case "+":
+                    addition(zahl1,zahl2);
+                    break;
+                case "-":
+                    substraction(zahl1,zahl2);
+                    break;
+                case "*":
+                    multiplication(zahl1,zahl2);
+                    break;
+                case "/":
+                    division(zahl1,zahl2);
+                    break;
+                default:
+                    Console.WriteLine ("unknown Operator"); 
+                    break;
             }
-
+        }
+        static void addition (int zahl1, int zahl2)
+        { 
+            Console.WriteLine (zahl1 + zahl2);
+        }
+        static void substraction (int zahl1, int zahl2)
+        { Console.WriteLine (zahl1 - zahl2);
+        }
+        static void multiplication (int zahl1, int zahl2)
+        { Console.WriteLine (zahl1 * zahl2);
+        }
+        static void division (int zahl1, int zahl2)
+        {Console.WriteLine (zahl1 / zahl2);
         }
     }
 }
