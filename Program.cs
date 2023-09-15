@@ -17,23 +17,22 @@ namespace HelloWorld
             int numberToGuess = random.Next (0,101);
             while (numberToGuess != nonloso){ 
                 //zahl wurde nicht getroffen             
-                Console.WriteLine("Du hast verloren");
+                Console.WriteLine("peccato,hai perso");
 
                 if(nonloso < numberToGuess)
                 {
-                    Console.WriteLine("Die gesuchte Zahl ist größer");
-
+                    Console.WriteLine("il numero che stai cercando e più grande");
                 }
                 else
                 {
-                    Console.WriteLine("Die gesuchte Zahl ist kleiner");
+                    Console.WriteLine("il numero che stai cercando e più piccolo");
                 }
                 nonloso = Convert.ToInt16 (Console.ReadLine ());
             }
                 
             
 
-            Console.WriteLine ("hai vinto");
+            Console.WriteLine ("congratulazione,hai vinto");
         }
 
         
