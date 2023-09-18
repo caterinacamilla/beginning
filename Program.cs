@@ -76,8 +76,25 @@ namespace HelloWorld
             string eingabe = Console.ReadLine ();
             int groese = Convert.ToInt16(eingabe);
             int [] myArray = new int [groese];
-        }
+        
+            Console.WriteLine("Wie groß soll das Array sein?");
 
+          int aa = Convert.ToInt32(Console.ReadLine());
+
+          int[] myarray = new int[aa];
+            for(int i=0; i<aa; i++)
+
+              {
+            int zahl = Convert.ToInt32(Console.ReadLine());
+            myarray[i] = zahl;
+
+
+            Console.WriteLine("------------------");    
+            Console.WriteLine($"Die kleinste Zahl ist: {myarray.Min()}");    
+            Console.WriteLine($"Die groesste Zahl ist: {myarray.Max()}");
+            Console.WriteLine($"Der Durchschnittswert beträgt: {myarray.Average()}");
         
     }
+}
+}
 }
