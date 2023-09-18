@@ -12,16 +12,9 @@ namespace HelloWorld
         static void Main(string[] args)
         {
           
-           //Frage den Nutzer nach einer Zahl und gebe die Zahlen rückwärts aus
-          //p.e. 65 => 64, 63, 62, 61, ...
-
-            Console.WriteLine("Gib eine Zahl ein");
-            Console.WriteLine("------------------");
-          for(int zahl = Convert.ToInt32(Console.ReadLine()); zahl>=0; zahl--)
-          {
-            Console.WriteLine(zahl);
-          }
-        
+           //Berechne die Fibonacci Zahlen bis zu einer eingegebenen Zahl vm Nutzer
+           //1+1 =2
+           //1+2 =3
     }
 }
 }
