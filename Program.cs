@@ -20,15 +20,19 @@ namespace HelloWorld
           //...
 
 
-        Console.WriteLine("Zähle die Vorkommnisse der jeweiligen Buchstaben im Wort MissiSsiPpi");
-        Console.WriteLine("------------------");
 
-      string wort = "Mississippi";
-      int m = wort.Count(c => c == 'M');
-      int i = wort.Count(c => c == 'i');
-      int s = wort.Count(c => c == 's'|| c =='S');
-      int p = wort.Count(c => c == 'p'|| c =='P');
-      Console.WriteLine($"Im Wort MissiSsiPpi kommt der Buchstabe m {m} mal, i {i} mal, s {s} mal und p {p} mal vor.");
+       string text = "MissiSssssssiPpi";
+            text = text.ToLower();
+            int amountP = text.Count(p=>p =='p');
+            int amountM = text.Count(p=>p =='m');
+            int amountI = text.Count(p=>p =='i');
+            int amountS = text.Count(p=>p =='s');
+
+            Console.WriteLine("Es kommen im Text" + text + "folgende buchstaben vor");
+            Console.WriteLine("p:" + amountP);
+            Console.WriteLine("m:" + amountM);
+            Console.WriteLine("i:" + amountI);
+            Console.WriteLine("s:" + amountS);
     }
 }
 }
