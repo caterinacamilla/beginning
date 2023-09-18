@@ -11,24 +11,24 @@ namespace HelloWorld
     { 
         static void Main(string[] args)
         {
-          
-           //Berechne die Fibonacci Zahlen bis zu einer eingegebenen Zahl vm Nutzer
-           //1+1 =2
-           //1+2 =3
+          // Zähle die Vorkommnisse der einzelnen buchstaben in Mississippi
+          // Groß-  und Kleinschreibung kann ignoriert werden
+          //Im Wort Mississippi kommt der Buchstabe 
+          //p = 2mal vor
+          //i = 1mal vor
+          //s =4 mal vor
+          //...
 
-            Console.WriteLine("Bis zu welcher Zahl sollen die Fibonacci Zahlen ausgegeben werden?");
-            int eingabe = Convert.ToInt32(Console.ReadLine());
-            int fib1 = 1;
-            int fib2 = 1;
-            int ergebnis = 0;
 
-            while(eingabe > (fib1+fib2))
-            {
-                ergebnis = fib1 + fib2;
-                Console.WriteLine($"Ergebnis {fib1} + {fib2} = {ergebnis}");
-                fib1 = fib2;
-                fib2 = ergebnis;
-            }
+        Console.WriteLine("Zähle die Vorkommnisse der jeweiligen Buchstaben im Wort MissiSsiPpi");
+        Console.WriteLine("------------------");
+
+      string wort = "Mississippi";
+      int m = wort.Count(c => c == 'M');
+      int i = wort.Count(c => c == 'i');
+      int s = wort.Count(c => c == 's'|| c =='S');
+      int p = wort.Count(c => c == 'p'|| c =='P');
+      Console.WriteLine($"Im Wort MissiSsiPpi kommt der Buchstabe m {m} mal, i {i} mal, s {s} mal und p {p} mal vor.");
     }
 }
 }
